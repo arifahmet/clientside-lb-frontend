@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: lb-frontend-deployment
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    kubernetes:
+      discovery:
+        all-namespaces: true
+server:
+  port: 8989
