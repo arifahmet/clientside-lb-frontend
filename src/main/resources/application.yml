@@ -1,6 +1,9 @@
 spring:
   application:
     name: lb-frontend-deployment
+  zipkin:
+    enabled: true
+    base-url: http://zipkin-server
   cloud:
     loadbalancer:
       ribbon:
